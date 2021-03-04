@@ -1,0 +1,87 @@
+.message-sent {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px white;
+
+    img {
+        border: 2px solid black;
+        border-radius: 60px;
+        background-color: blue;
+    }
+
+    p {
+        margin-left: 50px;
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+    }
+
+    span {
+        position: absolute;
+        right: 20px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+.date {
+    font-size: 1rem;
+}
+
+.message-received {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px white;
+
+    img {
+        border: 2px solid black;
+        border-radius: 60px;
+        background-color: red;
+    }
+
+    p {
+        position: absolute;
+        right: 200px;
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+    }
+
+    span {
+        position: absolute;
+        left: 20px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+#inputtext {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#inputsubmit {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, 50%);
+    color: white;
+    margin-left: 10px;
+}
+
+#signout {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}

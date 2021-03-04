@@ -5,7 +5,6 @@ import {useCollectionData} from 'react-firebase-hooks/firestore';
 import SignIn from './components/SignIn'; 
 import SignOut from './components/SignOut';
 import Chat from './components/Chat';
-import ChatMessage from './components/ChatMessage';
 
 
 

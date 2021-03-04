@@ -14,13 +14,15 @@ const Chat = () => {
     const sendMessage = async (e) => {
       e.preventDefault()
 
-      const {uid, photoURL} = auth().currentUser
+      const {uid, photoURL, displayName} = auth().currentUser
 
       await messagesRef.add({
         text:formValue,
         createdAt:firebase.firestore.FieldValue.serverTimestamp(),
-        uid, photoURL
+        uid, photoURL, displayName
       })
+
+      setFormValue('')
     }
 
     return (
@@ -31,8 +33,8 @@ const Chat = () => {
             )}
         </main>
         <form onSubmit={sendMessage}>
-          <input type="text" value={formValue} onChange={(e) =>setFormValue(e.target.value)} placeholder="Say something salty ! "/>
-          <button type="submit" disabled={!formValue}>Send !</button>
+          <input id="inputtext" type="text" value={formValue} onChange={(e) =>setFormValue(e.target.value)} placeholder="Say something salty ! "/>
+          <button id="inputsubmit" type="submit" disabled={!formValue}>Send !</button>
         </form>
       </>
     )
